@@ -17,7 +17,13 @@ const routes = [{
   // this generates a separate chunk (about.[hash].js) for this route
   // which is lazy-loaded when the route is visited.
   component: () => import( /* webpackChunkName: "about" */ '../views/About.vue')
-}, {
+},
+{
+  path: '/databindinginputnumber',
+  name: 'DataBindingInputNumber',
+  component: () => import( /* webpackChunkName: "databindinginputnumber" */ '../views/DataBindingInputNumber.vue')
+},
+{
   path: '/databinding',
   name: 'DataBinding',
   component: DataBinding
